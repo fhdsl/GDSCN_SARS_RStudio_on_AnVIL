@@ -1,15 +1,19 @@
-book_filename: "Course_Name"
+book_filename: "GDSCN Book SARS with Galaxy on AnVIL"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/AnVIL_Template/
+repo: https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-chapter_of_course.Rmd",
-            "03-AnVIL_modules.Rmd",
-            "04-workspace_modules.Rmd",
-            "05-billing_modules.Rmd",
-            "06-onboarding_modules.Rmd",
-            "About.Rmd",
-            "References.Rmd"]
+            "03-lesson-plan.Rmd",
+            "04-variants.Rmd",
+            "05-sequencing.Rmd",
+            "06-alignments.Rmd",
+            "07-cloud.Rmd",
+            "08-overview-video.Rmd",
+            "09-student_guide.Rmd",
+            "A-register-solutions.Rmd",
+            "B-help.Rmd",
+            "D-download.Rmd",
+            "E-feedback.Rmd",
+            "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
