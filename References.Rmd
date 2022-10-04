@@ -1,4 +1,4 @@
-# Samples 
+# Samples and References 
 
 All sequences were downloaded from NCBI's GenBank. We used sequence data from the following accession numbers:
 
@@ -11,8 +11,6 @@ OX003129.1	beta
 OX315743.1	omicron.1
 OW998592.1	alpha
 MW911054.1	gamma
-
-# References
 
 Benson DA, Cavanaugh M, Clark K, Karsch-Mizrachi I, Lipman DJ, Ostell J, Sayers EW. GenBank. Nucleic Acids Res. 2013 Jan;41(Database issue):D36-42. doi: 10.1093/nar/gks1195. Epub 2012 Nov 27. PMID: 23193287; PMCID: PMC3531190.
 
