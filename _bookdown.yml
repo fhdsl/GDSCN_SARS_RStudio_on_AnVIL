@@ -1,14 +1,15 @@
 book_filename: "GDSCN SARS Phylogeny on AnVIL"
 chapter_name: "Chapter "
 repo: https://github.com/fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL/
-rmd_files: ["index.Rmd",
+rmd_files: [
             "03-instructor_guide.Rmd",
             "09-student_guide.Rmd",
             "A-answer_guide.Rmd",
             "B-help.Rmd",
             "D-download.Rmd",
             "E-feedback.Rmd",
-            "References.Rmd"]
+            "References.Rmd",
+            "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
