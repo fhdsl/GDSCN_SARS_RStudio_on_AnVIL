@@ -57,7 +57,7 @@ We need to install two packages:
 
 To install the packages, we type the following code into the RStudio console:
 
-```{r, eval= FALSE, message = FALSE, warning = FALSE}
+```{r, message = FALSE, warning = FALSE}
 install.packages('ape')
 
 install.packages('phangorn')
