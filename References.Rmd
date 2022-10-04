@@ -1,4 +1,4 @@
-# Samples and References 
+# References 
 
 All sequences were downloaded from NCBI's GenBank. We used sequence data from the following accession numbers:
 
