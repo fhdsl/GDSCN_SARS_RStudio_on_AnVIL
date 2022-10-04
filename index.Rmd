@@ -8,12 +8,11 @@ biblio-style: apalike
 link-citations: yes
 description: "This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants."
 favicon: assets/GDSCN_style/gdscn_favicon.ico
-
 ---
 
 # Overview {-}
 
-This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants.
+This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary relationships among the SARS-CoV-2 variants.
 
 There is a growing need for undergraduate students to learn cutting-edge concepts in genomics data science, including performing analysis on the cloud instead of a personal computer. This lesson aims to introduce basic tree building and interpretation using publicly available genetic samples of SARS-CoV-2. Students will be introduced to the sequencing revolution, variants, the basics of tree building and reading phylogenies, and essentials of cloud computing prior to the lab activity. During the lesson, students will work hands-on with RStudio on the [AnVIL](https://anvilproject.org/) cloud computing resource to check data, build trees, and visualize their results.
 
