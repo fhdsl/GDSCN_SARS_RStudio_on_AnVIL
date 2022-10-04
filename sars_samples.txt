@@ -1,0 +1,12 @@
+OX315675.1	omicron.2
+OP093374.1	omicron.4
+OP093373.1	omicron.5
+OK091006.1	delta
+NC_045512.2	Wuhan_reference
+OX003129.1	beta
+OX315743.1	omicron.1
+OW998592.1	alpha
+MW911054.1	gamma
+
+
+
