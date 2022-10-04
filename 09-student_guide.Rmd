@@ -9,7 +9,7 @@ This chapter contains the student instructions for the SARS-CoV-2 Phylogeny with
 
 ## Introduction
 
-Since the beginning of the Covid19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related.
+Since the beginning of the covid19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related.
 
 ### Before You Start
 
@@ -81,7 +81,7 @@ You can verify that both packages have been loaded by looking at the Packages ta
 
 Now we need to retrieve the data. We'll start by loading a type of data file called a fasta file. The fasta format is a common way to store sequences (either DNA or protein). Each sample in a fasta file has two sections. The sample ID and other descriptive information is on the first line (the description line). This line begins with either a > or a ;. The sample sequence is on the line immediately after the description. The sequence is written in standard IUCAC codes for either nucleic acids (for DNA sequence) or amino acids (for protein sequence). The sequence can also include unknown bases or gaps.
 
-The fasta file we're loading first contains the aligned sequences for the spike protein of 5 SARS-Cov-2 samples. This is what the top of the file looks like in a text editor:
+The fasta file we're loading first contains the aligned sequences for the spike protein of 5 SARS-CoV-2 samples. This is what the top of the file looks like in a text editor:
 
 <img src="resources/images/09-fasta.png" title="Examples of a fasta file format" alt="An example of the first few lines of a fasta file" style="display: block; margin: auto;" />
 
@@ -170,7 +170,7 @@ QUESTIONS:
 
 ### Examining branch lengths
 
-Now we will add branch lengths to our trees. Information about branch lengths are saved in our previous trees, but those branch lengths are equal to the number of subsitutions per site, which can be difficult to interpret. Instead, we will look at trees where the branch lengths have been scaled so that each branch is equal to the total number of substitutions (changes in the DNA sequence).
+Now we will add branch lengths to our trees. Information about branch lengths are saved in our previous trees, but those branch lengths are equal to the number of substitutions per site, which can be difficult to interpret. Instead, we will look at trees where the branch lengths have been scaled so that each branch is equal to the total number of substitutions (changes in the DNA sequence).
 
 First, let's load and view a tree containing the five non-omicron sequences.
 

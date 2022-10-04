@@ -29,7 +29,7 @@ GC
 GenBank
 GDSCN
 Giovanetti
-gjs
+gks
 glycoprotein
 Gmail
 impactful
@@ -56,7 +56,7 @@ phylogenetically
 phylogenies
 PMC
 PMCID
-OMID
+PMID
 preprint
 reproducibility
 RStudio
