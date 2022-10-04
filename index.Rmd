@@ -8,6 +8,10 @@ biblio-style: apalike
 link-citations: yes
 description: "This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants."
 favicon: assets/GDSCN_style/gdscn_favicon.ico
+output:
+    bookdown::word_document2:
+      reference_docx: assets/gdscn-template.docx
+      toc: true
 ---
 
 # Overview {-}
