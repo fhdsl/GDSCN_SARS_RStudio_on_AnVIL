@@ -1,6 +1,6 @@
-book_filename: "GDSCN Book SARS with Galaxy on AnVIL"
+book_filename: "GDSCN SARS Phylogeny on AnVIL"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/
+repo: https://github.com/fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL/
 rmd_files: ["index.Rmd",
             "03-instructor_guide.Rmd",
             "09-student_guide.Rmd",
