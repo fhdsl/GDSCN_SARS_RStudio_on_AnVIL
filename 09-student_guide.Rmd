@@ -9,7 +9,7 @@ This chapter contains the student instructions for the SARS-CoV-2 Phylogeny with
 
 ## Introduction
 
-Since the beginning of the covid19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related.
+Since the beginning of the Covid-19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related.
 
 ### Before You Start
 
