@@ -54,13 +54,4 @@ exclude = c(
 # Create table for AnVIL repos detected through the API
 knitr::kable(make_anvil_repo_table(exclude), format = "html")
 ```
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
+
