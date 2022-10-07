@@ -9,14 +9,17 @@ This chapter contains the student instructions for the SARS-CoV-2 Phylogeny with
 
 ## Introduction
 
-Since the beginning of the Covid-19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related.
+Since the beginning of the Covid-19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related. If you are interested in learning more about this topic, we recommend you check out the SARS-CoV-2 resources on [Nextstrain.org](https://nextstrain.org/sars-cov-2/).
 
 ### Before You Start
 
-Make sure you have an AnVIL account (refer to https://jhudatascience.org/AnVIL_Book_Instructor_Guide/student-account-setup.html) 
-
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_google_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
 ### Objectives
-
 
 This activity will teach you how to use the AnVIL platform to:
 
@@ -41,6 +44,8 @@ anvil.terra.bio
 **Tip**
 At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
 :::
+
+Workspace for cloning coming soon!
 
 ### Set Up
 
@@ -131,7 +136,7 @@ QUESTIONS:
 
 ## Exercise Three: How are variants related to the original SARS-CoV-2 reference strain?
 
-We'll work with both the smaller spike protein dataset (saved as  `spike.small`) and the spike protein dataset with omicron samples (saved as `spike.omicron`) in this activity. 
+We'll work with both the smaller spike protein dataset (saved as  `spike.phydat`) and the spike protein dataset with omicron samples (saved as `spike.omicron`) in this activity. 
 
 ### Building a neighbor-joining tree
 
@@ -148,7 +153,11 @@ The first command (`dist.ml`) converts the genetic data into a distance matrix, 
 plot(nj.small)
 ```
 
-We can do the same for the larger dataset that includes omicron sequences.
+When reading phylogenetic trees, it's important to remember that relatedness is determined by the number of nodes between two taxa. The delta variant is most closely related to the beta variant because they share a common node (where the branches join together). We always look at common ancestors of clades, so we essentially read ancestry on a tree from right (where the taxa are) to left. Thus, the delta variant is more closely related to the beta variant because the delta branch connects to a node shared by the beta branch before it connects to a node shared with the gamma branch or the Wuhan reference/alpha variant branch.
+
+<img src="resources/images/09-mcra_tree.png" title="Most recent common ancestor of delta and related lineages" alt="Most recent common ancestor of delta and related lineage" style="display: block; margin: auto;" />
+
+Now let's look at where the omicron sequences are in the SARS-CoV-2 tree.
 
 ```{r, message = FALSE, warning = FALSE}
 dist.omicron <- dist.ml(spike.omicron)
@@ -156,7 +165,6 @@ nj.omicron <- nj(dist.omicron)
 plot(nj.omicron)
 ```
 
-When reading phylogenetic trees, it's important to remember that relatedness is determined by the number of nodes between two taxa. The delta variant is most closely related to the beta variant because they share a common node (where the branches join together). We always look at common ancestors of clades, so we essentially read ancestry on a tree from right (where the taxa are) to left. Thus, the delta variant is more closely related to the beta variant because the delta branch connects to a node shared by the beta branch before it connects to a node shared with the gamma branch or the Wuhan reference/alpha variant branch.
 
 ::: {.reflection}
 QUESTIONS:
@@ -190,13 +198,13 @@ You may be wondering why the total branch length changes (31) is different from 
 
 Let's look at a short example:
 
-cat     GC*A* TT*C*
+cat         GC**A** TT**C**
 
-dog     GC*C* TT*C*
+dog         GC**C** TT**C**
 
-frog    GC*C* TT*A*
+frog        GC**C** TT**A**
 
-snake   GC*C* TT*A*
+snake       GC**C** TT**A**
 
 In this collection of sequences, there are 2 site patterns (both in bold), but only one is phylogenetically informative because it tells us about the relatedness between the species. While the cat sequence is different from the others at the third site, this doesn't actually give us information about the relationships among the four species. The sixth site, however, tells us that the cat and dog share a mutation that frog and snake do not. We can interpret that to mean the cat and dog are more closely related to each other than either is to the frog or the snake. Thus, this particular site pattern gives us information we can use to build the phylogenetic tree.
 :::
@@ -229,12 +237,14 @@ QUESTIONS:
 
 11. What is the branch length distance between the omicron clade and its closest relative?
 
-12. The covid vaccines were originally designed based on the Wuhan reference sequence of the spike protein. Using what you have learned about the phylogenetic tree of SARS-CoV-2 variants, can you explain why these initial vaccines were less effective at protecting against the omicron variants than they were against the delta variant?
+12. The covid vaccines were originally designed based on the Wuhan reference sequence of the spike protein. The immune system learns to recognize the spike protein from the vaccine and can identify and destroy any invading Covid-19 viruses. Using what you have learned about the phylogenetic tree of SARS-CoV-2 variants, can you explain why these initial vaccines were less effective at protecting against the omicron variants than they were against the delta variant?
 :::
 
 ## Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?
 
 The SARS-CoV-2 genome contains 6 protein-coding regions. So far, we've been working with genetic data from the region that codes for spike protein. (The spike protein is the part of the virus that sticks out to form the characteristic spikes on the outside of the SARS-CoV-2 virus.) However, you could also use any of the other 5 protein-coding regions for this exercise. 
+
+<img src="resources/images/09-covid_illustration.png" title="Illustration of spike and membrane proteins on virus capsule" alt="Illustration of spike and membrane proteins on virus capsule" style="display: block; margin: auto;" />
 
 Let's look at sequences from the region that codes for the membrane glycoprotein.
 
@@ -275,3 +285,4 @@ QUESTIONS:
 
 Once you are done with the activity, you’ll need to shut down your RStudio cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.
 
+Directions coming soon!
