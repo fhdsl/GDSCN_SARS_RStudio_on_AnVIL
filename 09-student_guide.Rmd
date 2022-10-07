@@ -19,6 +19,7 @@ cow::borrow_chapter(
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+
 ### Objectives
 
 This activity will teach you how to use the AnVIL platform to:
@@ -90,7 +91,7 @@ The fasta file we're loading first contains the aligned sequences for the spike 
 
 <img src="resources/images/09-fasta.png" title="Examples of a fasta file format" alt="An example of the first few lines of a fasta file" style="display: block; margin: auto;" />
 
-We can load this file into RStudio using the `read.FASTA` command and save it as the object "spike.small".
+We can load this file into RStudio using the `read.FASTA` command and save it as the object "spike.fasta".
 
 ```{r, message = FALSE, warning = FALSE}
 spike.fasta <- read.FASTA("sars_spike_protein.fasta")
@@ -198,13 +199,13 @@ You may be wondering why the total branch length changes (31) is different from 
 
 Let's look at a short example:
 
-cat         GC**A** TT**C**
+cat:    GC**A** TT**C**
 
-dog         GC**C** TT**C**
+dog:    GC**C** TT**C**
 
-frog        GC**C** TT**A**
+frog:   GC**C** TT**A**
 
-snake       GC**C** TT**A**
+snake:    GC**C** TT**A**
 
 In this collection of sequences, there are 2 site patterns (both in bold), but only one is phylogenetically informative because it tells us about the relatedness between the species. While the cat sequence is different from the others at the third site, this doesn't actually give us information about the relationships among the four species. The sixth site, however, tells us that the cat and dog share a mutation that frog and snake do not. We can interpret that to mean the cat and dog are more closely related to each other than either is to the frog or the snake. Thus, this particular site pattern gives us information we can use to build the phylogenetic tree.
 :::
