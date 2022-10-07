@@ -63,7 +63,7 @@ install.packages('ape')
 install.packages('phangorn')
 ```
 
-Once you've downloaded a package, it will be saved on your computer (or, in the case of AnVIL, on your persistent disk space) so that you don't have to download it again. Anytime you want to use the set of commands that are stored in a particular package, you'll tell R to open the package with the "library" command. 
+Once you've downloaded a package, it will be saved on your computer (or, in the case of AnVIL, on your persistent disk space) so that you don't have to download it again. Anytime you want to use the set of commands that are stored in a particular package, you'll tell R to open the package with the `library` command. 
 
 Let's open both packages now:
 
