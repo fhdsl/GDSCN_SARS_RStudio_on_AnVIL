@@ -1,3 +1,4 @@
+# (PART\*) Lab Exercise Materials {-}
 
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
@@ -46,9 +47,11 @@ anvil.terra.bio
 At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
 :::
 
-Workspace for cloning coming soon!
+A workspace for this activity on AnVIL coming soon!
 
 ### Set Up
+
+Coming soon!
 
 ## Exercise One: Loading libraries in RStudio
 
