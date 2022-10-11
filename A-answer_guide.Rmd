@@ -2,6 +2,7 @@
 
 # Answer Guide
 
+This page contains the answers to the reflection questions asked in the student guide. If you discover a mistake or have a suggestion for additional or alternate reflection questions, please contact us through our [Discourse Channel](https://help.anvilproject.org/) or [submit an issue on our GitHub repository](https://github.com/fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL/).
 
 
 1. What is some information saved in a .fasta object that RStudio tells us that we don't get from a .phyDat object?
