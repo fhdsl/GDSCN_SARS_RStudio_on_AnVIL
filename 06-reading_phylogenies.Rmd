@@ -9,6 +9,4 @@ This lecture module introduces how to interpret phylogenetic trees and basic phy
 1. Learn how to interpret phylogenetic topologies and relationships.
 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iNYRd3a6Sdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1V7ZX2pK6uySy2cgQXj4GRzjI5iyKbKiK8oa0967VE9s/edit?pli=1#slide=id.p).
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1V7ZX2pK6uySy2cgQXj4GRzjI5iyKbKiK8oa0967VE9s/edit#slide=id.p).

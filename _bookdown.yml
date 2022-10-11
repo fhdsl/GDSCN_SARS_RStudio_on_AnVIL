@@ -3,6 +3,9 @@ chapter_name: "Chapter "
 repo: https://github.com/fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL/
 rmd_files: ["index.Rmd",
             "03-instructor_guide.Rmd",
+            "04-variants.Rmd",
+            "05-sequencing_revolution.Rmd",
+            "06-reading_phylogenies.Rmd",
             "09-student_guide.Rmd",
             "A-answer_guide.Rmd",
             "B-help.Rmd",
