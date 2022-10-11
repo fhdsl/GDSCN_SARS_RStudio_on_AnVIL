@@ -1,15 +1,18 @@
-book_filename: "Course_Name"
+book_filename: "GDSCN SARS Phylogeny on AnVIL"
 chapter_name: "Chapter "
-repo: https://github.com/jhudsl/AnVIL_Template/
+repo: https://github.com/fhdsl/GDSCN_SARS_Phylogeny_on_AnVIL/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-chapter_of_course.Rmd",
-            "03-AnVIL_modules.Rmd",
-            "04-workspace_modules.Rmd",
-            "05-billing_modules.Rmd",
-            "06-onboarding_modules.Rmd",
-            "About.Rmd",
-            "References.Rmd"]
+            "03-instructor_guide.Rmd",
+            "04-variants.Rmd",
+            "05-sequencing_revolution.Rmd",
+            "06-reading_phylogenies.Rmd",
+            "09-student_guide.Rmd",
+            "A-answer_guide.Rmd",
+            "B-help.Rmd",
+            "D-download.Rmd",
+            "E-feedback.Rmd",
+            "References.Rmd",
+            "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
