@@ -19,6 +19,7 @@ clade
 clades
 CoV
 covid
+Davian
 doi
 dropdown
 Epub
@@ -41,6 +42,7 @@ Mizrachi
 nar
 NCBI's
 NCI
+Nextstrain
 NHGRI
 Onboarding
 Ostell
