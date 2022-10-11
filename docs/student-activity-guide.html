@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Student Activity Guide | GDSCN Book: SARS Phylogeny on AnVIL</title>
+  <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Student Activity Guide | GDSCN Book: SARS Phylogeny on AnVIL" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Student Activity Guide | GDSCN Book: SARS Phylogeny on AnVIL" />
+  
+  <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants." />
+  
+
+
+
+<meta name="date" content="2022-10-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/GDSCN_style/gdscn_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="reading-phylogenies.html"/>
+<link rel="next" href="answer-guide.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/AnVIL_style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://anvilproject.org/" target="_blank"><img src="assets/AnVIL_style/logo-anvil.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#skills-level"><i class="fa fa-check"></i>Skills Level</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#anvil-collection"><i class="fa fa-check"></i>AnVIL Collection</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="instructor-guide.html"><a href="instructor-guide.html"><i class="fa fa-check"></i>Instructor Guide</a>
+<ul>
+<li class="chapter" data-level="" data-path="instructor-guide.html"><a href="instructor-guide.html#suggested-activity-context"><i class="fa fa-check"></i>Suggested Activity Context</a></li>
+<li class="chapter" data-level="" data-path="instructor-guide.html"><a href="instructor-guide.html#lesson-plan"><i class="fa fa-check"></i>Lesson Plan</a></li>
+<li class="chapter" data-level="" data-path="instructor-guide.html"><a href="instructor-guide.html#notes-for-instructors"><i class="fa fa-check"></i>Notes for Instructors</a></li>
+<li class="chapter" data-level="" data-path="instructor-guide.html"><a href="instructor-guide.html#getting-credit-for-professional-development"><i class="fa fa-check"></i>Getting Credit for Professional Development</a></li>
+</ul></li>
+<li class="part"><span><b>Background Lectures</b></span></li>
+<li class="chapter" data-level="1" data-path="what-is-a-variant.html"><a href="what-is-a-variant.html"><i class="fa fa-check"></i><b>1</b> What Is a Variant?</a></li>
+<li class="chapter" data-level="2" data-path="the-sequencing-revolution.html"><a href="the-sequencing-revolution.html"><i class="fa fa-check"></i><b>2</b> The Sequencing Revolution</a></li>
+<li class="chapter" data-level="3" data-path="reading-phylogenies.html"><a href="reading-phylogenies.html"><i class="fa fa-check"></i><b>3</b> Reading Phylogenies</a></li>
+<li class="part"><span><b>Lab Exercise Materials</b></span></li>
+<li class="chapter" data-level="4" data-path="student-activity-guide.html"><a href="student-activity-guide.html"><i class="fa fa-check"></i><b>4</b> Student Activity Guide</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#introduction"><i class="fa fa-check"></i><b>4.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#before-you-start"><i class="fa fa-check"></i><b>4.1.1</b> Before You Start</a></li>
+<li class="chapter" data-level="4.1.2" data-path="student-activity-guide.html"><a href="student-activity-guide.html#objectives"><i class="fa fa-check"></i><b>4.1.2</b> Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="student-activity-guide.html"><a href="student-activity-guide.html#getting-started"><i class="fa fa-check"></i><b>4.2</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#set-up"><i class="fa fa-check"></i><b>4.2.1</b> Set Up</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="student-activity-guide.html"><a href="student-activity-guide.html#exercise-one-loading-libraries-in-rstudio"><i class="fa fa-check"></i><b>4.3</b> Exercise One: Loading libraries in RStudio</a></li>
+<li class="chapter" data-level="4.4" data-path="student-activity-guide.html"><a href="student-activity-guide.html#exercise-two-examining-fasta-files-in-rstudio"><i class="fa fa-check"></i><b>4.4</b> Exercise Two: Examining fasta files in RStudio</a></li>
+<li class="chapter" data-level="4.5" data-path="student-activity-guide.html"><a href="student-activity-guide.html#exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain"><i class="fa fa-check"></i><b>4.5</b> Exercise Three: How are variants related to the original SARS-CoV-2 reference strain?</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#building-a-neighbor-joining-tree"><i class="fa fa-check"></i><b>4.5.1</b> Building a neighbor-joining tree</a></li>
+<li class="chapter" data-level="4.5.2" data-path="student-activity-guide.html"><a href="student-activity-guide.html#examining-branch-lengths"><i class="fa fa-check"></i><b>4.5.2</b> Examining branch lengths</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="student-activity-guide.html"><a href="student-activity-guide.html#exercise-four-do-other-protein-coding-regions-show-us-the-same-phylogenetic-relationships"><i class="fa fa-check"></i><b>4.6</b> Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?</a></li>
+<li class="chapter" data-level="4.7" data-path="student-activity-guide.html"><a href="student-activity-guide.html#wrap-up"><i class="fa fa-check"></i><b>4.7</b> Wrap-up</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="answer-guide.html"><a href="answer-guide.html"><i class="fa fa-check"></i><b>A</b> Answer Guide</a></li>
+<li class="chapter" data-level="B" data-path="help.html"><a href="help.html"><i class="fa fa-check"></i><b>B</b> Help</a></li>
+<li class="chapter" data-level="C" data-path="download.html"><a href="download.html"><i class="fa fa-check"></i><b>C</b> Download</a></li>
+<li class="chapter" data-level="D" data-path="give-us-feedback.html"><a href="give-us-feedback.html"><i class="fa fa-check"></i><b>D</b> Give Us Feedback</a></li>
+<li class="chapter" data-level="E" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>E</b> References</a></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="http://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<a href="http://hutchdatascience.org/"><img src="https://hutchdatascience.org/images/FHDataScienceLab_Rec_funfetti.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GDSCN Book: SARS Phylogeny on AnVIL</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/AnvIL_style/style.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
+</div>
+<div id="student-activity-guide" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Student Activity Guide</h1>
+<p>This chapter contains the student instructions for the SARS-CoV-2 Phylogeny with RStudio activity.</p>
+<div id="introduction" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Since the beginning of the Covid-19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related. If you are interested in learning more about this topic, we recommend you check out the SARS-CoV-2 resources on <a href="https://nextstrain.org/sars-cov-2/">Nextstrain.org</a>.</p>
+<div id="before-you-start" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Before You Start</h3>
+<p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
+<p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
+</div>
+<div id="objectives" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Objectives</h3>
+<p>This activity will teach you how to use the AnVIL platform to:</p>
+<ol style="list-style-type: decimal">
+<li>Get started working on AnVIL</li>
+<li>Launch RStudio</li>
+<li>Import data into RStudio</li>
+<li>Examine fasta and phyDat files</li>
+<li>Build a neighbor-joining phylogeny</li>
+<li>Interpret the topology and branch lengths of a phylogeny</li>
+</ol>
+</div>
+</div>
+<div id="getting-started" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Getting Started</h2>
+<p>In the next few steps, you will walk through how to get set up to use RStudio on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.</p>
+<p>Use a web browser to go to the AnVIL website. In the browser type:</p>
+<pre><code>anvil.terra.bio</code></pre>
+<div class="notice">
+<p><strong>Tip</strong>
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.</p>
+</div>
+<p>A workspace for this activity on AnVIL coming soon!</p>
+<div id="set-up" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Set Up</h3>
+<p>Coming soon!</p>
+</div>
+</div>
+<div id="exercise-one-loading-libraries-in-rstudio" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Exercise One: Loading libraries in RStudio</h2>
+<p>Before we can start our analysis of how the SARS-CoV-2 variants are related to each other, we need to prepare the RStudio workspace and load the data.</p>
+<p>R is an open-source statistical programming language and anyone can contribute to it. People have written programs in R to do a ton of different things, and they can make those programs (known as packages, or libraries) available to everyone. Generally, when someone has created a package they want to share, they will submit it to a repository, where anyone using R can download it.</p>
+<p>For this lesson, we are using the <a href="https://cran.r-project.org/">CRAN</a> (Comprehensive R Archive Network) repository. There are a series of servers around the world that store the up-to-date packages. When you open R, you can access those servers and download any package you want. If we are downloading a package that has been stored on CRAN, we use the command <code>install.packages</code>.</p>
+<p>We need to install two packages:
+<a href="https://academic.oup.com/bioinformatics/article/20/2/289/204981">ape</a> and <a href="https://academic.oup.com/bioinformatics/article/27/4/592/198887">phangorn</a>. Both of these packages were written specifically for phylogenetic analysis in R.</p>
+<p>To install the packages, we type the following code into the RStudio console:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="student-activity-guide.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ape&#39;</span>)</span>
+<span id="cb2-2"><a href="student-activity-guide.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="student-activity-guide.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;phangorn&#39;</span>)</span></code></pre></div>
+<p>Once you’ve downloaded a package, it will be saved on your computer (or, in the case of AnVIL, on your persistent disk space) so that you don’t have to download it again. Anytime you want to use the set of commands that are stored in a particular package, you’ll tell R to open the package with the <code>library</code> command.</p>
+<p>Let’s open both packages now:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="student-activity-guide.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb3-2"><a href="student-activity-guide.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phangorn)</span></code></pre></div>
+<p>You can verify that both packages have been loaded by looking at the Packages tab in the lower left-hand window of the RStudio interface. Packages that have been loaded are checked. You can search specifically for each package, or scroll down the entire list.</p>
+<p><img src="resources/images/09-check_packages.png" title="How to check for loaded packages" alt="How to check for loaded packages" style="display: block; margin: auto;" /></p>
+</div>
+<div id="exercise-two-examining-fasta-files-in-rstudio" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Exercise Two: Examining fasta files in RStudio</h2>
+<p>Now we need to retrieve the data. We’ll start by loading a type of data file called a fasta file. The fasta format is a common way to store sequences (either DNA or protein). Each sample in a fasta file has two sections. The sample ID and other descriptive information is on the first line (the description line). This line begins with either a &gt; or a ;. The sample sequence is on the line immediately after the description. The sequence is written in standard IUCAC codes for either nucleic acids (for DNA sequence) or amino acids (for protein sequence). The sequence can also include unknown bases or gaps.</p>
+<p>The fasta file we’re loading first contains the aligned sequences for the spike protein of 5 SARS-CoV-2 samples. This is what the top of the file looks like in a text editor:</p>
+<p><img src="resources/images/09-fasta.png" title="Examples of a fasta file format" alt="An example of the first few lines of a fasta file" style="display: block; margin: auto;" /></p>
+<p>We can load this file into RStudio using the <code>read.FASTA</code> command and save it as the object “spike.fasta”.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="student-activity-guide.html#cb4-1" aria-hidden="true" tabindex="-1"></a>spike.fasta <span class="ot">&lt;-</span> <span class="fu">read.FASTA</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>)</span></code></pre></div>
+<p>After we’ve created an object in RStudio, we can get information about the object by typing the object’s name.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="student-activity-guide.html#cb5-1" aria-hidden="true" tabindex="-1"></a>spike.fasta</span></code></pre></div>
+<pre><code>## 5 DNA sequences in binary format stored in a list.
+## 
+## All sequences of same length: 3827 
+## 
+## Labels:
+## alpha
+## beta
+## delta
+## gamma
+## Wuhan_reference
+## 
+## Base composition:
+##     a     c     g     t 
+## 0.294 0.188 0.184 0.333 
+## (Total: 19.14 kb)</code></pre>
+<p>Here we can see a summary of what this object contains, as well as how long the sequences are and the sequence names.</p>
+<p>Notice that RStudio has saved the information in the fasta file as binary data. This means the sequence information has been converted from “ATCG” into something easier for RStudio to work with, but harder for humans to interpret.</p>
+<p>The <code>phangorn</code> package uses a special data format called <code>phyDat</code>, which is derived from the fasta format. A <code>phyDat</code> object provides some additional information about the samples we upload.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="student-activity-guide.html#cb7-1" aria-hidden="true" tabindex="-1"></a>spike.phydat <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb7-2"><a href="student-activity-guide.html#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="student-activity-guide.html#cb7-3" aria-hidden="true" tabindex="-1"></a>spike.phydat</span></code></pre></div>
+<pre><code>## 5 sequences with 3827 character and 46 different site patterns.
+## The states are a c g t</code></pre>
+<p>Different site patterns refers to sites that differ between sequences. In this small dataset, 46 of the 3827 possible bases (characters) show differences among these SARS-CoV-2 samples.</p>
+<p>We’ve been working with a dataset that contains the original SARS-CoV-2 sequence (the Wuhan reference sample), as well as samples of the alpha, beta, delta, and gamma variants. Another variant, the omicron variant, was first identified in late 2021 and quickly became a variant of concern. Let’s look at a dataset that contains additional omicron samples.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="student-activity-guide.html#cb9-1" aria-hidden="true" tabindex="-1"></a>spike.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb9-2"><a href="student-activity-guide.html#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="student-activity-guide.html#cb9-3" aria-hidden="true" tabindex="-1"></a>spike.omicron</span></code></pre></div>
+<pre><code>## 9 sequences with 3827 character and 96 different site patterns.
+## The states are a c g t</code></pre>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol style="list-style-type: decimal">
+<li><p>What is some information saved in a .fasta object that RStudio tells us that we don’t get from a .phyDat object?</p></li>
+<li><p>How many omicron sequences are there in the second file (loaded into the object <code>spike.omicron</code>)?</p></li>
+<li><p>Do you think there is more variability in the omicron sequences than in other variants (alpha, beta, delta, and gamma)? Why or why not?</p></li>
+</ol>
+</div>
+</div>
+<div id="exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Exercise Three: How are variants related to the original SARS-CoV-2 reference strain?</h2>
+<p>We’ll work with both the smaller spike protein dataset (saved as <code>spike.phydat</code>) and the spike protein dataset with omicron samples (saved as <code>spike.omicron</code>) in this activity.</p>
+<div id="building-a-neighbor-joining-tree" class="section level3" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Building a neighbor-joining tree</h3>
+<p>We can use <code>phyDat</code> objects to build a type of phylogenetic tree called a neighbor-joining tree. We can do this in two steps in RStudio using the <code>phangorn</code> package.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="student-activity-guide.html#cb11-1" aria-hidden="true" tabindex="-1"></a>dist.small <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.phydat)</span>
+<span id="cb11-2"><a href="student-activity-guide.html#cb11-2" aria-hidden="true" tabindex="-1"></a>nj.small <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.small)</span></code></pre></div>
+<p>The first command (<code>dist.ml</code>) converts the genetic data into a distance matrix, while the second command (<code>nj</code>) uses the matrix to group taxa based on the genetic distance between them. We plot the object created by the <code>nj</code> command to visualize our phylogenetic tree.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="student-activity-guide.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.small)</span></code></pre></div>
+<p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>When reading phylogenetic trees, it’s important to remember that relatedness is determined by the number of nodes between two taxa. The delta variant is most closely related to the beta variant because they share a common node (where the branches join together). We always look at common ancestors of clades, so we essentially read ancestry on a tree from right (where the taxa are) to left. Thus, the delta variant is more closely related to the beta variant because the delta branch connects to a node shared by the beta branch before it connects to a node shared with the gamma branch or the Wuhan reference/alpha variant branch.</p>
+<p><img src="resources/images/09-mrca_tree.png" title="Most recent common ancestor of delta and related lineages" alt="Most recent common ancestor of delta and related lineage" style="display: block; margin: auto;" /></p>
+<p>Now let’s look at where the omicron sequences are in the SARS-CoV-2 tree.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="student-activity-guide.html#cb13-1" aria-hidden="true" tabindex="-1"></a>dist.omicron <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.omicron)</span>
+<span id="cb13-2"><a href="student-activity-guide.html#cb13-2" aria-hidden="true" tabindex="-1"></a>nj.omicron <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.omicron)</span>
+<span id="cb13-3"><a href="student-activity-guide.html#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.omicron)</span></code></pre></div>
+<p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Which variant is most closely related to the original Wuhan reference sequence?</p></li>
+<li><p>Which variant(s) is the most distantly related to the original Wuhan reference sequence?</p></li>
+<li><p>Which variant shares the most recent common ancestor with the omicron variants? What does this mean for determining where the omicron variant came from?</p></li>
+</ol>
+</div>
+</div>
+<div id="examining-branch-lengths" class="section level3" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> Examining branch lengths</h3>
+<p>Now we will add branch lengths to our trees. Information about branch lengths are saved in our previous trees, but those branch lengths are equal to the number of substitutions per site, which can be difficult to interpret. Instead, we will look at trees where the branch lengths have been scaled so that each branch is equal to the total number of substitutions (changes in the DNA sequence).</p>
+<p>First, let’s load and view a tree containing the five non-omicron sequences.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="student-activity-guide.html#cb14-1" aria-hidden="true" tabindex="-1"></a>spike.tree_small <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_small.tre&quot;</span>)</span>
+<span id="cb14-2"><a href="student-activity-guide.html#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="student-activity-guide.html#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_small)</span>
+<span id="cb14-4"><a href="student-activity-guide.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_small<span class="sc">$</span>edge.length)</span></code></pre></div>
+<p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>The numbers in green boxes represent the number of DNA changes along a particular branch. For example, the Wuhan reference sequence is estimated to have only one DNA change from the spike protein sequence of the most recent common ancestor of all SARS-CoV-2 strains, while the alpha variant has 6 bases different from the most recent common ancestor. This also means the distance between Wuhan reference sequence and the alpha sample is 7 substitutions (1 substitution for the Wuhan sample + 6 substitutions for the alpha variant sample).</p>
+<div class="dictionary">
+<p><strong>Breakout Box: Learn more about phylogenetically informative sites</strong></p>
+<p>You may be wondering why the total branch length changes (31) is different from the number of site patterns listed in the phyDat summary (46). This is because only some of the 46 site patterns are what we call <em>phylogenetically informative</em>.</p>
+<p>Let’s look at a short example:</p>
+<p>cat: GC<strong>A</strong> TT<strong>C</strong></p>
+<p>dog: GC<strong>C</strong> TT<strong>C</strong></p>
+<p>frog: GC<strong>C</strong> TT<strong>A</strong></p>
+<p>snake: GC<strong>C</strong> TT<strong>A</strong></p>
+<p>In this collection of sequences, there are 2 site patterns (both in bold), but only one is phylogenetically informative because it tells us about the relatedness between the species. While the cat sequence is different from the others at the third site, this doesn’t actually give us information about the relationships among the four species. The sixth site, however, tells us that the cat and dog share a mutation that frog and snake do not. We can interpret that to mean the cat and dog are more closely related to each other than either is to the frog or the snake. Thus, this particular site pattern gives us information we can use to build the phylogenetic tree.</p>
+</div>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol start="7" style="list-style-type: decimal">
+<li><p>what is the branch length distance between the beta variant and the alpha variant?</p></li>
+<li><p>What is the longest branch length in the tree? What does this mean for the number of mutations (compared to the Wuhan reference sequence) seen in that variant versus the others?</p></li>
+</ol>
+</div>
+<p>Now let’s load and view a tree containing all nine SARS-CoV-2 samples.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="student-activity-guide.html#cb15-1" aria-hidden="true" tabindex="-1"></a>spike.tree_full <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_full.tre&quot;</span>)</span>
+<span id="cb15-2"><a href="student-activity-guide.html#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="student-activity-guide.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_full)</span>
+<span id="cb15-4"><a href="student-activity-guide.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_full<span class="sc">$</span>edge.length)</span></code></pre></div>
+<p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>What do these branch lengths tell us about the relationship among the SARS-CoV-2 variants?</p>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol start="9" style="list-style-type: decimal">
+<li><p>Did adding the omicron samples change the branch length distances between the original five samples? What is the branch length distance between the alpha and beta variants now?</p></li>
+<li><p>What is the length of the branch connecting the omicron group to the rest of the tree</p></li>
+<li><p>The covid vaccines were originally designed based on the Wuhan reference sequence of the spike protein. The immune system learns to recognize the spike protein from the vaccine and can identify and destroy any invading Covid-19 viruses. Using what you have learned about the phylogenetic tree of SARS-CoV-2 variants, can you explain why these initial vaccines were less effective at protecting against the omicron variants than they were against the delta variant?</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="exercise-four-do-other-protein-coding-regions-show-us-the-same-phylogenetic-relationships" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?</h2>
+<p>The SARS-CoV-2 genome contains 6 protein-coding regions. So far, we’ve been working with genetic data from the region that codes for spike protein. (The spike protein is the part of the virus that sticks out to form the characteristic spikes on the outside of the SARS-CoV-2 virus.) However, you could also use any of the other 5 protein-coding regions for this exercise.</p>
+<p><img src="resources/images/09-covid_illustration.png" title="Illustration of spike and membrane proteins on virus capsule" alt="Illustration of spike and membrane proteins on virus capsule" style="display: block; margin: auto;" /></p>
+<p>Let’s look at sequences from the region that codes for the membrane glycoprotein.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="student-activity-guide.html#cb16-1" aria-hidden="true" tabindex="-1"></a>membrane.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_membrane_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb16-2"><a href="student-activity-guide.html#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="student-activity-guide.html#cb16-3" aria-hidden="true" tabindex="-1"></a>membrane.omicron</span></code></pre></div>
+<pre><code>## 9 sequences with 670 character and 10 different site patterns.
+## The states are a c g t</code></pre>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol start="12" style="list-style-type: decimal">
+<li><p>Based on the information from the phydat files for the spike protein dataset and the membrane protein dataset, is there the same amount of variation in each protein-coding region?</p></li>
+<li><p>Do you think the spike protein dataset or the membrane protein dataset contains a greater number of phylogenetically-informative sites?</p></li>
+</ol>
+</div>
+<p>Now let’s look at a neighbor-joining tree built using the membrane protein dataset.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="student-activity-guide.html#cb18-1" aria-hidden="true" tabindex="-1"></a>nj.membrane <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_membrane_tree.tre&quot;</span>)</span>
+<span id="cb18-2"><a href="student-activity-guide.html#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="student-activity-guide.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.membrane)</span>
+<span id="cb18-4"><a href="student-activity-guide.html#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(nj.membrane<span class="sc">$</span>edge.length)</span></code></pre></div>
+<p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<div class="reflection">
+<p>QUESTIONS:</p>
+<ol start="14" style="list-style-type: decimal">
+<li><p>Is the tree built from the membrane protein data the same as the tree built from the spike protein data?</p></li>
+<li><p>Why is a greater number of phylogenetically-informative sites better for tree building?</p></li>
+</ol>
+</div>
+</div>
+<div id="wrap-up" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Wrap-up</h2>
+<p>Once you are done with the activity, you’ll need to shut down your RStudio cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.</p>
+<p>Directions coming soon!</p>
+
+</div>
+</div>
+
+
+
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reading-phylogenies.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="answer-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
