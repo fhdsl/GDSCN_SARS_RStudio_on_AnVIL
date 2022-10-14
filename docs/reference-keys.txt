@@ -7,6 +7,12 @@ before-you-start
 objectives
 getting-started
 set-up
+video-overview-of-rstudio-on-anvil
+objectives-1
+slides
+launching-rstudio
+touring-rstudio
+pausing-rstudio
 exercise-one-loading-libraries-in-rstudio
 exercise-two-examining-fasta-files-in-rstudio
 exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain

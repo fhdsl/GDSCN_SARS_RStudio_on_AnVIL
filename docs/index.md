@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: SARS Phylogeny on AnVIL"
-date: "October 11, 2022"
+date: "October 14, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -53,8 +53,8 @@ Please check out our full collection of AnVIL resources below!
 <tbody>
   <tr>
    <td style="text-align:left;"> [AnVIL Phylogenetic-Techniques](https://jhudatascience.org/AnVIL_Phylogenetic-Techniques/) ([github](https://github.com/jhudsl/AnVIL_Phylogenetic-Techniques)) </td>
-   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Phylogenetic-Techniques/ </td>
-   <td style="text-align:left;"> anvil </td>
+   <td style="text-align:left;"> A semester-long course on the basics of molecular phylogenetic techniques </td>
+   <td style="text-align:left;"> anvil, r-programming </td>
   </tr>
   <tr>
    <td style="text-align:left;"> [AnVIL: Getting Started](https://jhudatascience.org/AnVIL_Book_Getting_Started) ([github](https://github.com/jhudsl/AnVIL_Book_Getting_Started)) </td>
@@ -87,7 +87,7 @@ Please check out our full collection of AnVIL resources below!
    <td style="text-align:left;"> anvil </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [GDSCN: Statistics for Genomics scRNA-seq](http://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_SCRNA-seq/) ([github](https://github.com/jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq)) </td>
+   <td style="text-align:left;"> [GDSCN: Statistics for Genomics scRNA-seq](http://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_scRNA-seq/) ([github](https://github.com/jhudsl/GDSCN_Book_Statistics_for_Genomics_scRNA-seq)) </td>
    <td style="text-align:left;"> A set of lab modules for single cell RNA-seq analysis </td>
    <td style="text-align:left;"> anvil </td>
   </tr>
