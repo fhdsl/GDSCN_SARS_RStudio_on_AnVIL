@@ -17,9 +17,9 @@ _There are four omicron sequences in the second file._
 
 _While adding the omicron sequences to the fasta file increases the number of site patterns in the sequences, this doesn't necessarily mean the omicron sequences have more variability among each other than the other sequences. The omicron sequences may just be very different from the other variants._
 
-4. Which variant is most closely related to the original Wuhan reference sequence?
+4. Which variant has the most nucleotides in common with the original Wuhan reference sequence?
 
-_The alpha variant is the most closely related to the original Wuhan reference sequence._
+_The alpha variant has the most nucleotides in common with the original Wuhan reference sequence._
 
 5. Which variant(s) is the most distantly related to the original Wuhan reference sequence?
 

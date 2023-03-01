@@ -208,7 +208,7 @@ plot(nj.omicron)
 ::: {.reflection}
 QUESTIONS:
 
-4. Which variant is most closely related to the original Wuhan reference sequence?
+4. Which variant has the most nucleotides in common with the original Wuhan reference sequence?
 
 5. Which variant(s) is the most distantly related to the original Wuhan reference sequence?
 
