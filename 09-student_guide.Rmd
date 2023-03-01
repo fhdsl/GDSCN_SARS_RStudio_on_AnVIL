@@ -208,11 +208,9 @@ plot(nj.omicron)
 ::: {.reflection}
 QUESTIONS:
 
-4. Which variant is most closely related to the original Wuhan reference sequence?
+4. Which variant(s) is the most distantly related to the original Wuhan reference sequence?
 
-5. Which variant(s) is the most distantly related to the original Wuhan reference sequence?
-
-6. Which variant shares the most recent common ancestor with the omicron variants? What does this mean for determining where the omicron variant came from?
+5. Which variant shares the most recent common ancestor with the omicron variants? What does this mean for determining where the omicron variant came from?
 :::
 
 ### Examining branch lengths
@@ -251,9 +249,9 @@ In this collection of sequences, there are 2 site patterns (both in bold), but o
 ::: {.reflection}
 QUESTIONS:
 
-7. what is the branch length distance between the beta variant and the alpha variant?
+6. what is the branch length distance between the beta variant and the alpha variant?
 
-8. What is the longest branch length in the tree? What does this mean for the number of mutations (compared to the Wuhan reference sequence) seen in that variant versus the others?
+7. What is the longest branch length in the tree? What does this mean for the number of mutations (compared to the Wuhan reference sequence) seen in that variant versus the others?
 :::
 
 Now let's load and view a tree containing all nine SARS-CoV-2 samples.
@@ -270,11 +268,11 @@ What do these branch lengths tell us about the relationship among the SARS-CoV-2
 ::: {.reflection}
 QUESTIONS:
 
-9. Did adding the omicron samples change the branch length distances between the original five samples? What is the branch length distance between the alpha and beta variants now?
+8. Did adding the omicron samples change the branch length distances between the original five samples? What is the branch length distance between the alpha and beta variants now?
 
-10. What is the length of the branch connecting the omicron group to the rest of the tree
+9. What is the length of the branch connecting the omicron group to the rest of the tree
 
-11. The covid vaccines were originally designed based on the Wuhan reference sequence of the spike protein. The immune system learns to recognize the spike protein from the vaccine and can identify and destroy any invading Covid-19 viruses. Using what you have learned about the phylogenetic tree of SARS-CoV-2 variants, can you explain why these initial vaccines were less effective at protecting against the omicron variants than they were against the delta variant?
+10. The covid vaccines were originally designed based on the Wuhan reference sequence of the spike protein. The immune system learns to recognize the spike protein from the vaccine and can identify and destroy any invading Covid-19 viruses. Using what you have learned about the phylogenetic tree of SARS-CoV-2 variants, can you explain why these initial vaccines were less effective at protecting against the omicron variants than they were against the delta variant?
 :::
 
 ## Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?
@@ -294,9 +292,9 @@ membrane.omicron
 ::: {.reflection}
 QUESTIONS:
 
-12. Based on the information from the phydat files for the spike protein dataset and the membrane protein dataset, is there the same amount of variation in each protein-coding region?
+11. Based on the information from the phydat files for the spike protein dataset and the membrane protein dataset, is there the same amount of variation in each protein-coding region?
 
-13. Do you think the spike protein dataset or the membrane protein dataset contains a greater number of phylogenetically-informative sites? 
+12. Do you think the spike protein dataset or the membrane protein dataset contains a greater number of phylogenetically-informative sites? 
 :::
 
 Now let's look at a neighbor-joining tree built using the membrane protein dataset.
@@ -312,9 +310,9 @@ edgelabels(nj.membrane$edge.length)
 ::: {.reflection}
 QUESTIONS:
 
-14. Is the tree built from the membrane protein data the same as the tree built from the spike protein data?
+13. Is the tree built from the membrane protein data the same as the tree built from the spike protein data?
 
-15. Why is a greater number of phylogenetically-informative sites better for tree building?
+14. Why is a greater number of phylogenetically-informative sites better for tree building?
 :::
 
 
