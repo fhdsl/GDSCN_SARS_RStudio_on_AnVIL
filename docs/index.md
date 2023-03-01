@@ -1,5 +1,5 @@
 ---
-title: "GDSCN Book: SARS Phylogeny on AnVIL"
+title: "GDSCN Book: SARS with RStudio on AnVIL"
 date: "March 01, 2023"
 site: bookdown::bookdown_site
 documentclass: book
