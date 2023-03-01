@@ -1,6 +1,6 @@
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "04-variants.Rmd",
+  doc_path = "02-variants.Rmd",
   repo_name = "jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL"
 )
 ```
