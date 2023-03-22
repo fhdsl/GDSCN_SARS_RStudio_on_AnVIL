@@ -1,4 +1,35 @@
 
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'tibble'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
+## 'rlang::check_dots_unnamed' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_used' by
+## 'rlang::check_dots_used' when loading 'pillar'
+```
+
+```
+## Warning: replacing previous import 'ellipsis::check_dots_empty' by
+## 'rlang::check_dots_empty' when loading 'pillar'
+```
+
+
 # (PART\*) Background Lectures {-}
 
 # What Is a Variant?
@@ -10,6 +41,6 @@ This lecture module introduces genetic variants. It provides several examples of
 1. Answer “what is a genetic variant?”
 1. Learn about the molecular structure of a variant
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wqxhc0XNXOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kELyrelihP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1097pZ-m7u22TBs6vqgbqPT1TH4FwdCY4P89WLTp2wT4/edit?usp=sharing).
