@@ -1,35 +1,4 @@
 
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'pillar'
-```
-
-
 # (PART\*) Background Lectures {-}
 
 # What Is a Variant?

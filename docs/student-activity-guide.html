@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-03-22" />
+<meta name="date" content="2023-05-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,16 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHL20E9530"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CHL20E9530');
+</script>
 
 
 <style type="text/css">
@@ -353,13 +363,13 @@ At this point, it might make things easier to open up a new window in your brows
 <p>We need to install two packages:
 <a href="https://academic.oup.com/bioinformatics/article/20/2/289/204981">ape</a> and <a href="https://academic.oup.com/bioinformatics/article/27/4/592/198887">phangorn</a>. Both of these packages were written specifically for phylogenetic analysis in R.</p>
 <p>To install the packages, we type the following code into the RStudio console:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="student-activity-guide.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ape&#39;</span>)</span>
-<span id="cb15-2"><a href="student-activity-guide.html#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="student-activity-guide.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;phangorn&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="student-activity-guide.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ape&#39;</span>)</span>
+<span id="cb3-2"><a href="student-activity-guide.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="student-activity-guide.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;phangorn&#39;</span>)</span></code></pre></div>
 <p>Once you’ve downloaded a package, it will be saved on your computer (or, in the case of AnVIL, on your persistent disk space) so that you don’t have to download it again. Anytime you want to use the set of commands that are stored in a particular package, you’ll tell R to open the package with the <code>library</code> command.</p>
 <p>Let’s open both packages now:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="student-activity-guide.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
-<span id="cb16-2"><a href="student-activity-guide.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phangorn)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="student-activity-guide.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb4-2"><a href="student-activity-guide.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phangorn)</span></code></pre></div>
 <p>You can verify that both packages have been loaded by looking at the Packages tab in the lower left-hand window of the RStudio interface. Packages that have been loaded are checked. You can search specifically for each package, or scroll down the entire list.</p>
 <p><img src="resources/images/09-check_packages.png" title="How to check for loaded packages" alt="How to check for loaded packages" style="display: block; margin: auto;" /></p>
 </div>
@@ -369,9 +379,9 @@ At this point, it might make things easier to open up a new window in your brows
 <p>The fasta file we’re loading first contains the aligned sequences for the spike protein of 5 SARS-CoV-2 samples. This is what the top of the file looks like in a text editor:</p>
 <p><img src="resources/images/09-fasta.png" title="Examples of a fasta file format" alt="An example of the first few lines of a fasta file" style="display: block; margin: auto;" /></p>
 <p>We can load this file into RStudio using the <code>read.FASTA</code> command and save it as the object “spike.fasta”.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="student-activity-guide.html#cb17-1" aria-hidden="true" tabindex="-1"></a>spike.fasta <span class="ot">&lt;-</span> <span class="fu">read.FASTA</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="student-activity-guide.html#cb5-1" aria-hidden="true" tabindex="-1"></a>spike.fasta <span class="ot">&lt;-</span> <span class="fu">read.FASTA</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>)</span></code></pre></div>
 <p>After we’ve created an object in RStudio, we can get information about the object by typing the object’s name.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="student-activity-guide.html#cb18-1" aria-hidden="true" tabindex="-1"></a>spike.fasta</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="student-activity-guide.html#cb6-1" aria-hidden="true" tabindex="-1"></a>spike.fasta</span></code></pre></div>
 <pre><code>## 5 DNA sequences in binary format stored in a list.
 ## 
 ## All sequences of same length: 3827 
@@ -390,16 +400,16 @@ At this point, it might make things easier to open up a new window in your brows
 <p>Here we can see a summary of what this object contains, as well as how long the sequences are and the sequence names.</p>
 <p>Notice that RStudio has saved the information in the fasta file as binary data. This means the sequence information has been converted from “ATCG” into something easier for RStudio to work with, but harder for humans to interpret.</p>
 <p>The <code>phangorn</code> package uses a special data format called <code>phyDat</code>, which is derived from the fasta format. A <code>phyDat</code> object provides some additional information about the samples we upload.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="student-activity-guide.html#cb20-1" aria-hidden="true" tabindex="-1"></a>spike.phydat <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb20-2"><a href="student-activity-guide.html#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="student-activity-guide.html#cb20-3" aria-hidden="true" tabindex="-1"></a>spike.phydat</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="student-activity-guide.html#cb8-1" aria-hidden="true" tabindex="-1"></a>spike.phydat <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb8-2"><a href="student-activity-guide.html#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="student-activity-guide.html#cb8-3" aria-hidden="true" tabindex="-1"></a>spike.phydat</span></code></pre></div>
 <pre><code>## 5 sequences with 3827 character and 46 different site patterns.
 ## The states are a c g t</code></pre>
 <p>Different site patterns refers to sites that differ between sequences. In this small dataset, 46 of the 3827 possible bases (characters) show differences among these SARS-CoV-2 samples.</p>
 <p>We’ve been working with a dataset that contains the original SARS-CoV-2 sequence (the Wuhan reference sample), as well as samples of the alpha, beta, delta, and gamma variants. Another variant, the omicron variant, was first identified in late 2021 and quickly became a variant of concern. Let’s look at a dataset that contains additional omicron samples.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="student-activity-guide.html#cb22-1" aria-hidden="true" tabindex="-1"></a>spike.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb22-2"><a href="student-activity-guide.html#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="student-activity-guide.html#cb22-3" aria-hidden="true" tabindex="-1"></a>spike.omicron</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="student-activity-guide.html#cb10-1" aria-hidden="true" tabindex="-1"></a>spike.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb10-2"><a href="student-activity-guide.html#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="student-activity-guide.html#cb10-3" aria-hidden="true" tabindex="-1"></a>spike.omicron</span></code></pre></div>
 <pre><code>## 9 sequences with 3827 character and 96 different site patterns.
 ## The states are a c g t</code></pre>
 <div class="reflection">
@@ -417,17 +427,17 @@ At this point, it might make things easier to open up a new window in your brows
 <div id="building-a-neighbor-joining-tree" class="section level3" number="4.5.1">
 <h3><span class="header-section-number">4.5.1</span> Building a neighbor-joining tree</h3>
 <p>We can use <code>phyDat</code> objects to build a type of phylogenetic tree called a neighbor-joining tree. We can do this in two steps in RStudio using the <code>phangorn</code> package.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="student-activity-guide.html#cb24-1" aria-hidden="true" tabindex="-1"></a>dist.small <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.phydat)</span>
-<span id="cb24-2"><a href="student-activity-guide.html#cb24-2" aria-hidden="true" tabindex="-1"></a>nj.small <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.small)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="student-activity-guide.html#cb12-1" aria-hidden="true" tabindex="-1"></a>dist.small <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.phydat)</span>
+<span id="cb12-2"><a href="student-activity-guide.html#cb12-2" aria-hidden="true" tabindex="-1"></a>nj.small <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.small)</span></code></pre></div>
 <p>The first command (<code>dist.ml</code>) converts the genetic data into a distance matrix, while the second command (<code>nj</code>) uses the matrix to group taxa based on the genetic distance between them. We plot the object created by the <code>nj</code> command to visualize our phylogenetic tree.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="student-activity-guide.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.small)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="student-activity-guide.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.small)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>When reading phylogenetic trees, it’s important to remember that relatedness is determined by the number of nodes between two taxa. The delta variant is most closely related to the beta variant because they share a common node (where the branches join together). We always look at common ancestors of clades, so we essentially read ancestry on a tree from right (where the taxa are) to left. Thus, the delta variant is more closely related to the beta variant because the delta branch connects to a node shared by the beta branch before it connects to a node shared with the gamma branch or the Wuhan reference/alpha variant branch.</p>
 <p><img src="resources/images/09-mrca_tree.png" title="Most recent common ancestor of delta and related lineages" alt="Most recent common ancestor of delta and related lineage" style="display: block; margin: auto;" /></p>
 <p>Now let’s look at where the omicron sequences are in the SARS-CoV-2 tree.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="student-activity-guide.html#cb26-1" aria-hidden="true" tabindex="-1"></a>dist.omicron <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.omicron)</span>
-<span id="cb26-2"><a href="student-activity-guide.html#cb26-2" aria-hidden="true" tabindex="-1"></a>nj.omicron <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.omicron)</span>
-<span id="cb26-3"><a href="student-activity-guide.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.omicron)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="student-activity-guide.html#cb14-1" aria-hidden="true" tabindex="-1"></a>dist.omicron <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.omicron)</span>
+<span id="cb14-2"><a href="student-activity-guide.html#cb14-2" aria-hidden="true" tabindex="-1"></a>nj.omicron <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.omicron)</span>
+<span id="cb14-3"><a href="student-activity-guide.html#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.omicron)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
@@ -441,10 +451,10 @@ At this point, it might make things easier to open up a new window in your brows
 <h3><span class="header-section-number">4.5.2</span> Examining branch lengths</h3>
 <p>Now we will add branch lengths to our trees. Information about branch lengths are saved in our previous trees, but those branch lengths are equal to the number of substitutions per site, which can be difficult to interpret. Instead, we will look at trees where the branch lengths have been scaled so that each branch is equal to the total number of substitutions (changes in the DNA sequence).</p>
 <p>First, let’s load and view a tree containing the five non-omicron sequences.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="student-activity-guide.html#cb27-1" aria-hidden="true" tabindex="-1"></a>spike.tree_small <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_small.tre&quot;</span>)</span>
-<span id="cb27-2"><a href="student-activity-guide.html#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="student-activity-guide.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_small)</span>
-<span id="cb27-4"><a href="student-activity-guide.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_small<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="student-activity-guide.html#cb15-1" aria-hidden="true" tabindex="-1"></a>spike.tree_small <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_small.tre&quot;</span>)</span>
+<span id="cb15-2"><a href="student-activity-guide.html#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="student-activity-guide.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_small)</span>
+<span id="cb15-4"><a href="student-activity-guide.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_small<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>The numbers in green boxes represent the number of DNA changes along a particular branch. For example, the Wuhan reference sequence is estimated to have only one DNA change from the spike protein sequence of the most recent common ancestor of all SARS-CoV-2 strains, while the alpha variant has 6 bases different from the most recent common ancestor. This also means the distance between Wuhan reference sequence and the alpha sample is 7 substitutions (1 substitution for the Wuhan sample + 6 substitutions for the alpha variant sample).</p>
 <div class="dictionary">
@@ -465,10 +475,10 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 <p>Now let’s load and view a tree containing all nine SARS-CoV-2 samples.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="student-activity-guide.html#cb28-1" aria-hidden="true" tabindex="-1"></a>spike.tree_full <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_full.tre&quot;</span>)</span>
-<span id="cb28-2"><a href="student-activity-guide.html#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="student-activity-guide.html#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_full)</span>
-<span id="cb28-4"><a href="student-activity-guide.html#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_full<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="student-activity-guide.html#cb16-1" aria-hidden="true" tabindex="-1"></a>spike.tree_full <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_full.tre&quot;</span>)</span>
+<span id="cb16-2"><a href="student-activity-guide.html#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="student-activity-guide.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_full)</span>
+<span id="cb16-4"><a href="student-activity-guide.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_full<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>What do these branch lengths tell us about the relationship among the SARS-CoV-2 variants?</p>
 <div class="reflection">
@@ -486,9 +496,9 @@ At this point, it might make things easier to open up a new window in your brows
 <p>The SARS-CoV-2 genome contains 6 protein-coding regions. So far, we’ve been working with genetic data from the region that codes for spike protein. (The spike protein is the part of the virus that sticks out to form the characteristic spikes on the outside of the SARS-CoV-2 virus.) However, you could also use any of the other 5 protein-coding regions for this exercise.</p>
 <p><img src="resources/images/09-covid_illustration.png" title="Illustration of spike and membrane proteins on virus capsule" alt="Illustration of spike and membrane proteins on virus capsule" style="display: block; margin: auto;" /></p>
 <p>Let’s look at sequences from the region that codes for the membrane glycoprotein.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="student-activity-guide.html#cb29-1" aria-hidden="true" tabindex="-1"></a>membrane.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_membrane_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb29-2"><a href="student-activity-guide.html#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-3"><a href="student-activity-guide.html#cb29-3" aria-hidden="true" tabindex="-1"></a>membrane.omicron</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="student-activity-guide.html#cb17-1" aria-hidden="true" tabindex="-1"></a>membrane.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_membrane_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb17-2"><a href="student-activity-guide.html#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="student-activity-guide.html#cb17-3" aria-hidden="true" tabindex="-1"></a>membrane.omicron</span></code></pre></div>
 <pre><code>## 9 sequences with 670 character and 10 different site patterns.
 ## The states are a c g t</code></pre>
 <div class="reflection">
@@ -499,10 +509,10 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 <p>Now let’s look at a neighbor-joining tree built using the membrane protein dataset.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="student-activity-guide.html#cb31-1" aria-hidden="true" tabindex="-1"></a>nj.membrane <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_membrane_tree.tre&quot;</span>)</span>
-<span id="cb31-2"><a href="student-activity-guide.html#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-3"><a href="student-activity-guide.html#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.membrane)</span>
-<span id="cb31-4"><a href="student-activity-guide.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(nj.membrane<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="student-activity-guide.html#cb19-1" aria-hidden="true" tabindex="-1"></a>nj.membrane <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_membrane_tree.tre&quot;</span>)</span>
+<span id="cb19-2"><a href="student-activity-guide.html#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="student-activity-guide.html#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.membrane)</span>
+<span id="cb19-4"><a href="student-activity-guide.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(nj.membrane<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>

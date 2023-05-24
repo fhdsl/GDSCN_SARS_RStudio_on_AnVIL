@@ -1,35 +1,4 @@
 
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'tibble'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_unnamed' by
-## 'rlang::check_dots_unnamed' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_used' by
-## 'rlang::check_dots_used' when loading 'pillar'
-```
-
-```
-## Warning: replacing previous import 'ellipsis::check_dots_empty' by
-## 'rlang::check_dots_empty' when loading 'pillar'
-```
-
-
 # The Sequencing Revolution
 
 This lecture module introduces the history of the sequencing revolution. It highlights the enormous proliferation of genomic data that has accompanied the rapidly growing technology. It also suggests opportunities for careers in genomics, as well as an in-depth look at how some sequencing technologies actually work.
