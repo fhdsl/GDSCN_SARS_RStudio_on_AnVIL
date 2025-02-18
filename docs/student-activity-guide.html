@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Student Activity Guide | GDSCN Book: SARS with RStudio on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Student Activity Guide | GDSCN Book: SARS with RStudio on AnVIL" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This book provides resources for instructors to engage students in a cloud-based RStudio activity on AnVIL, focused on the evolutionary history of SARS-CoV-2 variants." />
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-05-24" />
+<meta name="date" content="2025-02-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   <link rel="shortcut icon" href="assets/GDSCN_style/gdscn_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="reading-phylogenies.html"/>
 <link rel="next" href="answer-guide.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHL20E9530"></script>
@@ -100,11 +99,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -113,14 +112,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -128,6 +127,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/GDSCN_style/gdscn.css" type="text/css" />
@@ -197,10 +200,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
-<p style="text-align:center;"> <a href="http://jhudatascience.org/"> The Johns Hopkins Data Science Lab </a></p>
-<a href="http://jhudatascience.org/"><img src="https://jhudatascience.org/images/dasl.png" style=" width: 80%; padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<a href="https://hutchdatascience.org/" target="_blank"><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/style-sets/fhdasl/copy_to_assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=GDSCN+Book:+SARS+with+RStudio+on+AnVIL"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
 
 </ul>
 
@@ -230,19 +233,19 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container">
   <img class= "hero-image" src="assets/GDSCN_style/dasl_thin_main_image.png">
 </div>
-<div id="student-activity-guide" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Student Activity Guide</h1>
+<div id="student-activity-guide" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Student Activity Guide<a href="student-activity-guide.html#student-activity-guide" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This chapter contains the student instructions for the SARS-CoV-2 Phylogeny with RStudio activity.</p>
-<div id="introduction" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<div id="introduction" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Introduction<a href="student-activity-guide.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Since the beginning of the Covid-19 pandemic in December 2019, the world has experienced waves of increased cases caused by new variants. This activity walks you through a simple phylogeny to explore how the new variants are related. If you are interested in learning more about this topic, we recommend you check out the SARS-CoV-2 resources on <a href="https://nextstrain.org/sars-cov-2/">Nextstrain.org</a>.</p>
-<div id="before-you-start" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Before You Start</h3>
+<div id="before-you-start" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Before You Start<a href="student-activity-guide.html#before-you-start" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you do not already have a Google account that you would like to use for accessing Terra, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
 <p>If you would like to create a Google account that is associated with your non-Gmail, institutional email address, follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
 </div>
-<div id="objectives" class="section level3" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Objectives</h3>
+<div id="objectives" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Objectives<a href="student-activity-guide.html#objectives" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This activity will teach you how to use the AnVIL platform to:</p>
 <ol style="list-style-type: decimal">
 <li>Get started working on AnVIL</li>
@@ -254,8 +257,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 </div>
-<div id="getting-started" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Getting Started</h2>
+<div id="getting-started" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Getting Started<a href="student-activity-guide.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In the next few steps, you will walk through how to get set up to use RStudio on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.</p>
 <p>Use a web browser to go to the AnVIL website. In the browser type:</p>
 <pre><code>anvil.terra.bio</code></pre>
@@ -264,28 +267,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.</p>
 </div>
 <p>A workspace for this activity on AnVIL coming soon!</p>
-<div id="set-up" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Set Up</h3>
+<div id="set-up" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Set Up<a href="student-activity-guide.html#set-up" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="video-overview-of-rstudio-on-anvil" class="section level3" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Video overview of RStudio on AnVIL</h3>
+<div id="video-overview-of-rstudio-on-anvil" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Video overview of RStudio on AnVIL<a href="student-activity-guide.html#video-overview-of-rstudio-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here is a video tutorial that describes the basics of using RStudio on AnVIL.</p>
 <iframe src="https://drive.google.com/file/d/1v72ZG8JIRDUaewFQgGfcCO_qoM4eYmYX/preview" width="640" height="360" allow="autoplay">
 </iframe>
 </div>
-<div id="objectives-1" class="section level3" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Objectives</h3>
+<div id="objectives-1" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Objectives<a href="student-activity-guide.html#objectives-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Start compute for your RStudio environment</li>
 <li>Tour RStudio on AnVIL</li>
 <li>Stop compute to minimize expenses</li>
 </ul>
 </div>
-<div id="slides" class="section level3" number="4.2.4">
-<h3><span class="header-section-number">4.2.4</span> Slides</h3>
+<div id="slides" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Slides<a href="student-activity-guide.html#slides" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The slides for this tutorial are are located <a href="https://docs.google.com/presentation/d/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw">here</a>.</p>
-<div id="launching-rstudio" class="section level4" number="4.2.4.1">
-<h4><span class="header-section-number">4.2.4.1</span> Launching RStudio</h4>
+<div id="launching-rstudio" class="section level4 hasAnchor" number="4.2.4.1">
+<h4><span class="header-section-number">4.2.4.1</span> Launching RStudio<a href="student-activity-guide.html#launching-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <div class="warning">
 <p>AnVIL is very versatile and can scale up to use very powerful cloud computers. It’s very important that you select a cloud computing environment appropriate to your needs to avoid runaway costs. If you are uncertain, start with the default settings; it is fairly easy to increase your compute resources later, if needed, but harder to scale down.</p>
 </div>
@@ -293,95 +296,104 @@ At this point, it might make things easier to open up a new window in your brows
 <ol style="list-style-type: decimal">
 <li><p>Open Terra - use a web browser to go to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a></p></li>
 <li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="480" /></p></li>
 <li><p>Click on the name of your Workspace. You should be routed to a link that looks like: <code>https://anvil.terra.bio/#workspaces/&lt;billing-project&gt;/&lt;workspace-name&gt;</code>.</p></li>
-<li><p>Click on the cloud icon on the far right to access your Cloud Environment options.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" title="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" /></p></li>
-<li><p>In the dialogue box, click the “Settings” button under RStudio</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" title="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="100%" /></p></li>
-<li><p>You will see some details about the default RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_35.png" title="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" /></p></li>
-<li><p>If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice. It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Click the “Create” button.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_41.png" title="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" /></p></li>
-<li><p>Otherwise, click “CUSTOMIZE” to modify the environment for your needs.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_48.png" title="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CUSTOMIZE&quot; button is highlighted." alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CUSTOMIZE&quot; button is highlighted." width="100%" /></p></li>
-<li><p>The dialogue box will close and you will be returned to your Workspace. You can see the status of your cloud environment by hovering over the RStudio logo. It will take a few minutes for Terra to request computers and install software.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" title="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" /></p></li>
+<li><p>Click on the cloud icon on the far right to access your Cloud Environment options. If you don’t see this icon, you may need to scroll to the right.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="480" /></p></li>
+<li><p>In the dialogue box, click the “Settings” button under RStudio.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="480" /></p></li>
+<li><p>You will see some configuration options for the RStudio cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_10.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The cost to run the environment is highlighted." width="480" /></p></li>
+<li><p>Configure any settings you need for your cloud environment. If you are uncertain about what you need, the default configuration is a reasonable, cost-conservative choice. It is fairly easy to increase your compute resources later, if needed, but harder to scale down. Scroll down and click the “CREATE” button when you are satisfied with your setup.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_16.png" alt="Screenshot of the RStudio Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="480" /></p></li>
+<li><p>The dialogue box will close and you will be returned to your Workspace. You can see the status of your cloud environment by hovering over the RStudio icon. It will take a few minutes for Terra to request computers and install software.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_91.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="480" /></p></li>
 <li><p>When your environment is ready, its status will change to “Running”. Click on the RStudio logo to open a new dialogue box that will let you launch RStudio.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" title="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." width="100%" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_95.png" alt="Screenshot of a Terra Workspace. The hovertext for the RStudio icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;." width="480" /></p></li>
 <li><p>Click the launch icon to open RStudio. This is also where you can pause, modify, or delete your environment when needed.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_99.png" title="Screenshot of the RStudio Environment Details dialogue box. The &quot;Open&quot; button is highlighted." alt="Screenshot of the RStudio Environment Details dialogue box. The &quot;Open&quot; button is highlighted." width="100%" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_99.png" alt="Screenshot of the RStudio Environment Details dialogue box. The &quot;Open&quot; button is highlighted." width="480" /></p></li>
 <li><p>You should now see the RStudio interface with information about the version printed to the console.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_103.png" title="Screenshot of the RStudio environment interface." alt="Screenshot of the RStudio environment interface." width="100%" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_103.png" alt="Screenshot of the RStudio environment interface." width="480" /></p></li>
 </ol>
 </div>
-<div id="touring-rstudio" class="section level4" number="4.2.4.2">
-<h4><span class="header-section-number">4.2.4.2</span> Touring RStudio</h4>
+<div id="touring-rstudio" class="section level4 hasAnchor" number="4.2.4.2">
+<h4><span class="header-section-number">4.2.4.2</span> Touring RStudio<a href="student-activity-guide.html#touring-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Next, we will be using RStudio and the package <code>Glimma</code> to create interactive plots. See <a href="https://bioconductor.org/packages/release/bioc/vignettes/Glimma/inst/doc/limma_edger.html">this vignette</a> for more information.</p>
 <ol style="list-style-type: decimal">
 <li><p>The Bioconductor team has created a very useful package to programmatically interact with Terra and Google Cloud. Install the <code>AnVIL</code> package. It will make some steps easier as we go along.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" title="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_49.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
 <li><p>You can now quickly install precompiled binaries using the AnVIL package’s <code>install()</code> function. We will use it to install the <code>Glimma</code> package and the <code>airway</code> package. The <code>airway</code> package contains a <code>SummarizedExperiment</code> data class. This data describes an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone.</p></li>
 </ol>
 <p>{Note: for some of the packages, you will have to install packaged from the CRAN repository, using the install.packages() function. The examples will show you which install method to use.}</p>
-<pre><code>&lt;img src=&quot;resources/images/09-student_guide_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png&quot; title=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; alt=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; width=&quot;480&quot; /&gt;</code></pre>
+<pre><code>&lt;img src=&quot;resources/images/09-student_guide_files/figure-html//1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png&quot; alt=&quot;Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted.&quot; width=&quot;480&quot; /&gt;</code></pre>
 <ol style="list-style-type: decimal">
 <li><p>Load the example data.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" title="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_56.png" alt="Screenshot of the RStudio environment interface. Code has been typed in the console and is highlighted." width="480" /></p></li>
 <li><p>The multidimensional scaling (MDS) plot is frequently used to explore differences in samples. When this data is MDS transformed, the first two dimensions explain the greatest variance between samples, and the amount of variance decreases monotonically with increasing dimension. The following code will launch a new window where you can interact with the MDS plot.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" title="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_70.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. All data points are blue." width="480" /></p></li>
 <li><p>Change the <code>colour_by</code> setting to “groups” so you can easily distinguish between groups. In this data, the “group” is the treatment.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_77.png" title="Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted." alt="Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_77.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. Data points are colored blue and orange by group. The colour by dropdown menu on the interactive plot is hightlighted." width="480" /></p></li>
 <li><p>You can download the interactive html file by clicking on “Save As”.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_0.png" title="Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted." alt="Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_0.png" alt="Screenshot of the Glimma popout showing the data in an MDS plot. The Save As menu is highlighted." width="480" /></p></li>
 <li><p>You can also download plots and other files created directly in RStudio. To download the following plot, click on “Export” and save in your preferred format to the default directory. This saves the file in your cloud environment.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_12.png" title="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." alt="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_12.png" alt="Screenshot of the RStudio interface. A plot has been created. The Export menu has been highlighted." width="480" /></p></li>
 <li><p>You should see the plot in the “Files” pane.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" title="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane." alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6da7f_0_19.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane." width="480" /></p></li>
 <li><p>Select this file and click “More” &gt; “Export”</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_0.png" title="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane. The &quot;More&quot; and &quot;Export&quot; menus have been highlighted." alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane. The &quot;More&quot; and &quot;Export&quot; menus have been highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_0.png" alt="Screenshot of the RStudio interface. A plot has been created. The saved pdf file is now visible under the &quot;Files&quot; pane. The &quot;More&quot; and &quot;Export&quot; menus have been highlighted." width="480" /></p></li>
 <li><p>Select “Download” to save the file to your local machine.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_8.png" title="Screenshot of the RStudio interface. The popup to download the selected file has been highlighted," alt="Screenshot of the RStudio interface. The popup to download the selected file has been highlighted," width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g1204ed6db6a_0_8.png" alt="Screenshot of the RStudio interface. The popup to download the selected file has been highlighted," width="480" /></p></li>
 </ol>
 </div>
-<div id="pausing-rstudio" class="section level4" number="4.2.4.3">
-<h4><span class="header-section-number">4.2.4.3</span> Pausing RStudio</h4>
+<div id="pausing-rstudio" class="section level4 hasAnchor" number="4.2.4.3">
+<h4><span class="header-section-number">4.2.4.3</span> Pausing RStudio<a href="student-activity-guide.html#pausing-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
-<li><p>The upper right corner reminds you that you are accruing cloud computing costs.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_84.png" title="Screenshot of the RStudio interface. The icon on the top right showing that the cloud environment is running is highlighted." alt="Screenshot of the RStudio interface. The icon on the top right showing that the cloud environment is running is highlighted." width="480" /></p></li>
-<li><p>You should minimize charges when you are not performing an analysis. You can do this by clicking on “Stop cloud environment”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost. This work will be lost if the cloud environment gets deleted. If there is anything you would like to save permanently, it’s a good idea to copy it from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_91.png" title="Screenshot of the RStudio interface. The stop icon on the top right which stops the cloud environment is highlighted." alt="Screenshot of the RStudio interface. The stop icon on the top right which stops the cloud environment is highlighted." width="480" /></p></li>
+<li><p>You can view costs and make changes to your cloud environments from the panel on the far right of the page. If you don’t see this panel, you may need to scroll to the right. Running environments will have a green dot, and paused environments will have an orange dot.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU_g230ed3a46c7_0_0.png" alt="Screenshot of the RStudio interface. The cloud environment panel on the right is highlighted." width="480" /></p></li>
+<li><p>Hovering over the RStudio icon will show you the costs associated with your RStudio environment. Click on the RStudio icon to open the cloud environment settings.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU_g230ed3a46c7_0_6.png" alt="Screenshot of the cloud environment panel.  The RStudio icon is highlighted." width="480" /></p></li>
+<li><p>Click the Pause button to pause RStudio. This will take a few minutes.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU_g230ed3a46c7_0_231.png" alt="Screenshot of the RStudio cloud environment settings. The Pause button is highlighted." width="480" /></p></li>
+<li><p>When the environment is paused, an orange dot will be displayed next to the RStudio icon. If you hover over the icon, you will see that it is paused, and has a small ongoing cost as long as it is paused. When you’re ready to resume working, you can do so by clicking the RStudio icon and clicking Resume.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/16s-TjOg19RrkxS9sM9fGfD0M_WIxlw-e8PFWDymjvRU_g230ed3a46c7_0_237.png" alt="Screenshot of a Terra Workspace Dashboard. The RStudio icon in the far right panel is highlighted.  It has an orange dot next to it indicating the cloud environment is paused." width="480" /></p></li>
+<li><p>The right-hand side icon reminds you that you are accruing cloud computing costs. If you don’t see this icon, you may need to scroll to the right.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_84.png" alt="Screenshot of the RStudio interface. The icon on the right showing that the cloud environment is running is highlighted." width="100%" /></p></li>
+<li><p>You should minimize charges when you are not performing an analysis. You can do this by clicking on the RStudio icon and selecting “Pause”. This will release the CPU and memory resources for other people to use. Note that your work will be saved in the environment and continue to accrue a very small cost. This work will be lost if the cloud environment gets deleted. If there is anything you would like to save permanently, it’s a good idea to copy it from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1BLTCaogA04bbeSD1tR1Wt-mVceQA6FHXa8FmFzIARrg_g11f12bc99af_0_91.png" alt="Screenshot of the RStudio menu. The pause button which stops the cloud environment is highlighted." width="100%" /></p></li>
 </ol>
+<div class="notice">
+<p>You can also pause your cloud environment(s) at <a href="https://anvil.terra.bio/#clusters" class="uri">https://anvil.terra.bio/#clusters</a>.</p>
 </div>
 </div>
 </div>
-<div id="exercise-one-loading-libraries-in-rstudio" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Exercise One: Loading libraries in RStudio</h2>
+</div>
+<div id="exercise-one-loading-libraries-in-rstudio" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Exercise One: Loading libraries in RStudio<a href="student-activity-guide.html#exercise-one-loading-libraries-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Before we can start our analysis of how the SARS-CoV-2 variants are related to each other, we need to prepare the RStudio workspace and load the data.</p>
 <p>R is an open-source statistical programming language and anyone can contribute to it. People have written programs in R to do a ton of different things, and they can make those programs (known as packages, or libraries) available to everyone. Generally, when someone has created a package they want to share, they will submit it to a repository, where anyone using R can download it.</p>
 <p>For this lesson, we are using the <a href="https://cran.r-project.org/">CRAN</a> (Comprehensive R Archive Network) repository. There are a series of servers around the world that store the up-to-date packages. When you open R, you can access those servers and download any package you want. If we are downloading a package that has been stored on CRAN, we use the command <code>install.packages</code>.</p>
 <p>We need to install two packages:
 <a href="https://academic.oup.com/bioinformatics/article/20/2/289/204981">ape</a> and <a href="https://academic.oup.com/bioinformatics/article/27/4/592/198887">phangorn</a>. Both of these packages were written specifically for phylogenetic analysis in R.</p>
 <p>To install the packages, we type the following code into the RStudio console:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="student-activity-guide.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ape&#39;</span>)</span>
-<span id="cb3-2"><a href="student-activity-guide.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="student-activity-guide.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;phangorn&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="student-activity-guide.html#cb3-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ape&#39;</span>)</span>
+<span id="cb3-2"><a href="student-activity-guide.html#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="student-activity-guide.html#cb3-3" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;phangorn&#39;</span>)</span></code></pre></div>
 <p>Once you’ve downloaded a package, it will be saved on your computer (or, in the case of AnVIL, on your persistent disk space) so that you don’t have to download it again. Anytime you want to use the set of commands that are stored in a particular package, you’ll tell R to open the package with the <code>library</code> command.</p>
 <p>Let’s open both packages now:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="student-activity-guide.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
-<span id="cb4-2"><a href="student-activity-guide.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(phangorn)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="student-activity-guide.html#cb4-1" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb4-2"><a href="student-activity-guide.html#cb4-2" tabindex="-1"></a><span class="fu">library</span>(phangorn)</span></code></pre></div>
 <p>You can verify that both packages have been loaded by looking at the Packages tab in the lower left-hand window of the RStudio interface. Packages that have been loaded are checked. You can search specifically for each package, or scroll down the entire list.</p>
 <p><img src="resources/images/09-check_packages.png" title="How to check for loaded packages" alt="How to check for loaded packages" style="display: block; margin: auto;" /></p>
 </div>
-<div id="exercise-two-examining-fasta-files-in-rstudio" class="section level2" number="4.4">
-<h2><span class="header-section-number">4.4</span> Exercise Two: Examining fasta files in RStudio</h2>
+<div id="exercise-two-examining-fasta-files-in-rstudio" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Exercise Two: Examining fasta files in RStudio<a href="student-activity-guide.html#exercise-two-examining-fasta-files-in-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now we need to retrieve the data. We’ll start by loading a type of data file called a fasta file. The fasta format is a common way to store sequences (either DNA or protein). Each sample in a fasta file has two sections. The sample ID and other descriptive information is on the first line (the description line). This line begins with either a &gt; or a ;. The sample sequence is on the line immediately after the description. The sequence is written in standard IUCAC codes for either nucleic acids (for DNA sequence) or amino acids (for protein sequence). The sequence can also include unknown bases or gaps.</p>
 <p>The fasta file we’re loading first contains the aligned sequences for the spike protein of 5 SARS-CoV-2 samples. This is what the top of the file looks like in a text editor:</p>
 <p><img src="resources/images/09-fasta.png" title="Examples of a fasta file format" alt="An example of the first few lines of a fasta file" style="display: block; margin: auto;" /></p>
 <p>We can load this file into RStudio using the <code>read.FASTA</code> command and save it as the object “spike.fasta”.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="student-activity-guide.html#cb5-1" aria-hidden="true" tabindex="-1"></a>spike.fasta <span class="ot">&lt;-</span> <span class="fu">read.FASTA</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="student-activity-guide.html#cb5-1" tabindex="-1"></a>spike.fasta <span class="ot">&lt;-</span> <span class="fu">read.FASTA</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>)</span></code></pre></div>
 <p>After we’ve created an object in RStudio, we can get information about the object by typing the object’s name.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="student-activity-guide.html#cb6-1" aria-hidden="true" tabindex="-1"></a>spike.fasta</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="student-activity-guide.html#cb6-1" tabindex="-1"></a>spike.fasta</span></code></pre></div>
 <pre><code>## 5 DNA sequences in binary format stored in a list.
 ## 
 ## All sequences of same length: 3827 
@@ -400,16 +412,16 @@ At this point, it might make things easier to open up a new window in your brows
 <p>Here we can see a summary of what this object contains, as well as how long the sequences are and the sequence names.</p>
 <p>Notice that RStudio has saved the information in the fasta file as binary data. This means the sequence information has been converted from “ATCG” into something easier for RStudio to work with, but harder for humans to interpret.</p>
 <p>The <code>phangorn</code> package uses a special data format called <code>phyDat</code>, which is derived from the fasta format. A <code>phyDat</code> object provides some additional information about the samples we upload.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="student-activity-guide.html#cb8-1" aria-hidden="true" tabindex="-1"></a>spike.phydat <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb8-2"><a href="student-activity-guide.html#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="student-activity-guide.html#cb8-3" aria-hidden="true" tabindex="-1"></a>spike.phydat</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="student-activity-guide.html#cb8-1" tabindex="-1"></a>spike.phydat <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb8-2"><a href="student-activity-guide.html#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="student-activity-guide.html#cb8-3" tabindex="-1"></a>spike.phydat</span></code></pre></div>
 <pre><code>## 5 sequences with 3827 character and 46 different site patterns.
 ## The states are a c g t</code></pre>
 <p>Different site patterns refers to sites that differ between sequences. In this small dataset, 46 of the 3827 possible bases (characters) show differences among these SARS-CoV-2 samples.</p>
 <p>We’ve been working with a dataset that contains the original SARS-CoV-2 sequence (the Wuhan reference sample), as well as samples of the alpha, beta, delta, and gamma variants. Another variant, the omicron variant, was first identified in late 2021 and quickly became a variant of concern. Let’s look at a dataset that contains additional omicron samples.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="student-activity-guide.html#cb10-1" aria-hidden="true" tabindex="-1"></a>spike.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb10-2"><a href="student-activity-guide.html#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="student-activity-guide.html#cb10-3" aria-hidden="true" tabindex="-1"></a>spike.omicron</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="student-activity-guide.html#cb10-1" tabindex="-1"></a>spike.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_spike_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb10-2"><a href="student-activity-guide.html#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="student-activity-guide.html#cb10-3" tabindex="-1"></a>spike.omicron</span></code></pre></div>
 <pre><code>## 9 sequences with 3827 character and 96 different site patterns.
 ## The states are a c g t</code></pre>
 <div class="reflection">
@@ -421,23 +433,23 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 </div>
-<div id="exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain" class="section level2" number="4.5">
-<h2><span class="header-section-number">4.5</span> Exercise Three: How are variants related to the original SARS-CoV-2 reference strain?</h2>
+<div id="exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Exercise Three: How are variants related to the original SARS-CoV-2 reference strain?<a href="student-activity-guide.html#exercise-three-how-are-variants-related-to-the-original-sars-cov-2-reference-strain" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We’ll work with both the smaller spike protein dataset (saved as <code>spike.phydat</code>) and the spike protein dataset with omicron samples (saved as <code>spike.omicron</code>) in this activity.</p>
-<div id="building-a-neighbor-joining-tree" class="section level3" number="4.5.1">
-<h3><span class="header-section-number">4.5.1</span> Building a neighbor-joining tree</h3>
+<div id="building-a-neighbor-joining-tree" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Building a neighbor-joining tree<a href="student-activity-guide.html#building-a-neighbor-joining-tree" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can use <code>phyDat</code> objects to build a type of phylogenetic tree called a neighbor-joining tree. We can do this in two steps in RStudio using the <code>phangorn</code> package.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="student-activity-guide.html#cb12-1" aria-hidden="true" tabindex="-1"></a>dist.small <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.phydat)</span>
-<span id="cb12-2"><a href="student-activity-guide.html#cb12-2" aria-hidden="true" tabindex="-1"></a>nj.small <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.small)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="student-activity-guide.html#cb12-1" tabindex="-1"></a>dist.small <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.phydat)</span>
+<span id="cb12-2"><a href="student-activity-guide.html#cb12-2" tabindex="-1"></a>nj.small <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.small)</span></code></pre></div>
 <p>The first command (<code>dist.ml</code>) converts the genetic data into a distance matrix, while the second command (<code>nj</code>) uses the matrix to group taxa based on the genetic distance between them. We plot the object created by the <code>nj</code> command to visualize our phylogenetic tree.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="student-activity-guide.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.small)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="student-activity-guide.html#cb13-1" tabindex="-1"></a><span class="fu">plot</span>(nj.small)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>When reading phylogenetic trees, it’s important to remember that relatedness is determined by the number of nodes between two taxa. The delta variant is most closely related to the beta variant because they share a common node (where the branches join together). We always look at common ancestors of clades, so we essentially read ancestry on a tree from right (where the taxa are) to left. Thus, the delta variant is more closely related to the beta variant because the delta branch connects to a node shared by the beta branch before it connects to a node shared with the gamma branch or the Wuhan reference/alpha variant branch.</p>
 <p><img src="resources/images/09-mrca_tree.png" title="Most recent common ancestor of delta and related lineages" alt="Most recent common ancestor of delta and related lineage" style="display: block; margin: auto;" /></p>
 <p>Now let’s look at where the omicron sequences are in the SARS-CoV-2 tree.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="student-activity-guide.html#cb14-1" aria-hidden="true" tabindex="-1"></a>dist.omicron <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.omicron)</span>
-<span id="cb14-2"><a href="student-activity-guide.html#cb14-2" aria-hidden="true" tabindex="-1"></a>nj.omicron <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.omicron)</span>
-<span id="cb14-3"><a href="student-activity-guide.html#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.omicron)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="student-activity-guide.html#cb14-1" tabindex="-1"></a>dist.omicron <span class="ot">&lt;-</span> <span class="fu">dist.ml</span>(spike.omicron)</span>
+<span id="cb14-2"><a href="student-activity-guide.html#cb14-2" tabindex="-1"></a>nj.omicron <span class="ot">&lt;-</span> <span class="fu">nj</span>(dist.omicron)</span>
+<span id="cb14-3"><a href="student-activity-guide.html#cb14-3" tabindex="-1"></a><span class="fu">plot</span>(nj.omicron)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
@@ -447,14 +459,14 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 </div>
-<div id="examining-branch-lengths" class="section level3" number="4.5.2">
-<h3><span class="header-section-number">4.5.2</span> Examining branch lengths</h3>
+<div id="examining-branch-lengths" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> Examining branch lengths<a href="student-activity-guide.html#examining-branch-lengths" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now we will add branch lengths to our trees. Information about branch lengths are saved in our previous trees, but those branch lengths are equal to the number of substitutions per site, which can be difficult to interpret. Instead, we will look at trees where the branch lengths have been scaled so that each branch is equal to the total number of substitutions (changes in the DNA sequence).</p>
 <p>First, let’s load and view a tree containing the five non-omicron sequences.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="student-activity-guide.html#cb15-1" aria-hidden="true" tabindex="-1"></a>spike.tree_small <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_small.tre&quot;</span>)</span>
-<span id="cb15-2"><a href="student-activity-guide.html#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="student-activity-guide.html#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_small)</span>
-<span id="cb15-4"><a href="student-activity-guide.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_small<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="student-activity-guide.html#cb15-1" tabindex="-1"></a>spike.tree_small <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_small.tre&quot;</span>)</span>
+<span id="cb15-2"><a href="student-activity-guide.html#cb15-2" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="student-activity-guide.html#cb15-3" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_small)</span>
+<span id="cb15-4"><a href="student-activity-guide.html#cb15-4" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_small<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>The numbers in green boxes represent the number of DNA changes along a particular branch. For example, the Wuhan reference sequence is estimated to have only one DNA change from the spike protein sequence of the most recent common ancestor of all SARS-CoV-2 strains, while the alpha variant has 6 bases different from the most recent common ancestor. This also means the distance between Wuhan reference sequence and the alpha sample is 7 substitutions (1 substitution for the Wuhan sample + 6 substitutions for the alpha variant sample).</p>
 <div class="dictionary">
@@ -475,10 +487,10 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 <p>Now let’s load and view a tree containing all nine SARS-CoV-2 samples.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="student-activity-guide.html#cb16-1" aria-hidden="true" tabindex="-1"></a>spike.tree_full <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_full.tre&quot;</span>)</span>
-<span id="cb16-2"><a href="student-activity-guide.html#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="student-activity-guide.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_full)</span>
-<span id="cb16-4"><a href="student-activity-guide.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_full<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="student-activity-guide.html#cb16-1" tabindex="-1"></a>spike.tree_full <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_tree_full.tre&quot;</span>)</span>
+<span id="cb16-2"><a href="student-activity-guide.html#cb16-2" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="student-activity-guide.html#cb16-3" tabindex="-1"></a><span class="fu">plot</span>(spike.tree_full)</span>
+<span id="cb16-4"><a href="student-activity-guide.html#cb16-4" tabindex="-1"></a><span class="fu">edgelabels</span>(spike.tree_full<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>What do these branch lengths tell us about the relationship among the SARS-CoV-2 variants?</p>
 <div class="reflection">
@@ -491,14 +503,14 @@ At this point, it might make things easier to open up a new window in your brows
 </div>
 </div>
 </div>
-<div id="exercise-four-do-other-protein-coding-regions-show-us-the-same-phylogenetic-relationships" class="section level2" number="4.6">
-<h2><span class="header-section-number">4.6</span> Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?</h2>
+<div id="exercise-four-do-other-protein-coding-regions-show-us-the-same-phylogenetic-relationships" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Exercise Four: Do other protein-coding regions show us the same phylogenetic relationships?<a href="student-activity-guide.html#exercise-four-do-other-protein-coding-regions-show-us-the-same-phylogenetic-relationships" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The SARS-CoV-2 genome contains 6 protein-coding regions. So far, we’ve been working with genetic data from the region that codes for spike protein. (The spike protein is the part of the virus that sticks out to form the characteristic spikes on the outside of the SARS-CoV-2 virus.) However, you could also use any of the other 5 protein-coding regions for this exercise.</p>
 <p><img src="resources/images/09-covid_illustration.png" title="Illustration of spike and membrane proteins on virus capsule" alt="Illustration of spike and membrane proteins on virus capsule" style="display: block; margin: auto;" /></p>
 <p>Let’s look at sequences from the region that codes for the membrane glycoprotein.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="student-activity-guide.html#cb17-1" aria-hidden="true" tabindex="-1"></a>membrane.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_membrane_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
-<span id="cb17-2"><a href="student-activity-guide.html#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-3"><a href="student-activity-guide.html#cb17-3" aria-hidden="true" tabindex="-1"></a>membrane.omicron</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="student-activity-guide.html#cb17-1" tabindex="-1"></a>membrane.omicron <span class="ot">&lt;-</span> <span class="fu">read.phyDat</span>(<span class="st">&quot;sars_membrane_protein_omicron.fasta&quot;</span>, <span class="at">format =</span> <span class="st">&quot;fasta&quot;</span>)</span>
+<span id="cb17-2"><a href="student-activity-guide.html#cb17-2" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="student-activity-guide.html#cb17-3" tabindex="-1"></a>membrane.omicron</span></code></pre></div>
 <pre><code>## 9 sequences with 670 character and 10 different site patterns.
 ## The states are a c g t</code></pre>
 <div class="reflection">
@@ -509,10 +521,10 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 <p>Now let’s look at a neighbor-joining tree built using the membrane protein dataset.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="student-activity-guide.html#cb19-1" aria-hidden="true" tabindex="-1"></a>nj.membrane <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_membrane_tree.tre&quot;</span>)</span>
-<span id="cb19-2"><a href="student-activity-guide.html#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-3"><a href="student-activity-guide.html#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(nj.membrane)</span>
-<span id="cb19-4"><a href="student-activity-guide.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">edgelabels</span>(nj.membrane<span class="sc">$</span>edge.length)</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="student-activity-guide.html#cb19-1" tabindex="-1"></a>nj.membrane <span class="ot">&lt;-</span> <span class="fu">read.tree</span>(<span class="st">&quot;sars_membrane_tree.tre&quot;</span>)</span>
+<span id="cb19-2"><a href="student-activity-guide.html#cb19-2" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="student-activity-guide.html#cb19-3" tabindex="-1"></a><span class="fu">plot</span>(nj.membrane)</span>
+<span id="cb19-4"><a href="student-activity-guide.html#cb19-4" tabindex="-1"></a><span class="fu">edgelabels</span>(nj.membrane<span class="sc">$</span>edge.length)</span></code></pre></div>
 <p><img src="resources/images/09-student_guide_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
@@ -522,19 +534,22 @@ At this point, it might make things easier to open up a new window in your brows
 </ol>
 </div>
 </div>
-<div id="wrap-up" class="section level2" number="4.7">
-<h2><span class="header-section-number">4.7</span> Wrap-up</h2>
+<div id="wrap-up" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Wrap-up<a href="student-activity-guide.html#wrap-up" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once you are done with the activity, you’ll need to shut down your RStudio cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.</p>
 <ol style="list-style-type: decimal">
-<li><p>Stopping your cloud environment only pauses your work. When you are ready to delete the cloud environment, click on the gear icon in the upper right corner to “Update cloud environment”.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_41.png" title="Screenshot of the Workspace page. The gear icon on the top right that updates the cloud environment is highlighted." alt="Screenshot of the Workspace page. The gear icon on the top right that updates the cloud environment is highlighted." width="480" /></p></li>
-<li><p>Click on “Delete Environment Options”.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" title="Screenshot of the cloud environment popout. &quot;Delete environment options&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete environment options&quot; is highlighted." width="480" /></p></li>
+<li><p>Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the right-hand side and select “Settings”. If you don’t see this icon, you may need to scroll to the right.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_41.png" alt="Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted" width="100%" /></p></li>
+<li><p>Click on “Delete Environment”.</p>
+<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" alt="Screenshot of the cloud environment popout. &quot;Delete environment&quot; is highlighted." width="100%" /></p></li>
 <li><p>If you are certain that you do not need the data and configuration on your disk, you should select “Delete everything, including persistent disk”. If there is anything you would like to save, open the compute environment and copy the file(s) from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" title="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" alt="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." width="100%" /></p></li>
 <li><p>Select “DELETE”.</p>
-<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" title="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." width="480" /></p></li>
+<p><img src="resources/images/09-student_guide_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" alt="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." width="100%" /></p></li>
 </ol>
+<div class="notice">
+<p>You can also delete your cloud environment(s) and disk storage at <a href="https://anvil.terra.bio/#clusters" class="uri">https://anvil.terra.bio/#clusters</a>.</p>
+</div>
 
 </div>
 </div>
