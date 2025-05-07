@@ -1,7 +1,7 @@
 chapter_name: "Chapter "
 repo: https://github.com/fhdsl/GDSCN_SARS_RStudio_on_AnVIL/pull/17
 rmd_files: ["index.Rmd",
-            "student-guide.Rmd",
+            "09-student_guide.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
